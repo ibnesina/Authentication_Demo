@@ -1,38 +1,3 @@
-<!-- <script setup>
-import { ref } from "vue";
-import api from "../api";
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-
-const form = ref({
-  email: "",
-  password: "",
-});
-
-const login = async () => {
-  try {
-    const response = await api.post("/login", form.value);
-    localStorage.setItem("token", response.data.token);
-    alert("Login successful!");
-    router.push("/users");
-  } catch (error) {
-    alert("Invalid credentials");
-  }
-};
-</script>
-
-<template>
-  <div>
-    <h2>Login</h2>
-    <form @submit.prevent="login">
-      <input v-model="form.email" type="email" placeholder="Email" required />
-      <input v-model="form.password" type="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
-  </div>
-</template> -->
-
 <template>
     <div class="auth-container">
       <div class="auth-card">
